@@ -165,15 +165,30 @@
       transition: all 0.3s ease;
     }
 
+    /* ✅ Responsive - Mobile Fix for Buttons */
     @media (max-width: 600px) {
       h1 { font-size: 2.3rem; }
       p { font-size: 1.2rem; }
-      .buttons { flex-direction: column; }
-      .btn { width: 80%; }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+      }
+
+      .btn {
+        width: 90%;
+        max-width: 320px;
+        text-align: center;
+      }
+
       .sidebar {
         width: 220px;
         padding: 60px 15px;
       }
+
       .sidebar a {
         font-size: 1rem;
         padding: 12px;
